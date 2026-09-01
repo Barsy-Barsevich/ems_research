@@ -1,0 +1,5 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+SP1,Simulation_Port,Simulation_Port,6.4,5.95,-90.000000,top
+SP2,Simulation_Port,Simulation_Port,10.6,5.45,90.000000,top
+SP3,Simulation_Port,Simulation_Port,6.4,4.465,-90.000000,top
+SP4,Simulation_Port,Simulation_Port,10.6,3.26,90.000000,top
