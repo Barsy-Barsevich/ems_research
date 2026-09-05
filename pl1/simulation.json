@@ -8,7 +8,7 @@
     "pixel_size": 2.5,
     "via/plating_thickness" : 35,
     "grid" : {
-        "inter_layers" : 5,
+        "inter_layers" : 4,
         "optimal" : 50,
         "diagonal" : 50,
         "perpendicular" : 200,
