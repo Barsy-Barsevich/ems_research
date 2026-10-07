@@ -1,0 +1,39 @@
+{
+    "format_version": "1.2",
+    "frequency": {
+        "start": 200000000.0,
+        "stop": 6000000000.0
+    },
+    "max_steps": 69600,
+    "pixel_size": 2.5,
+    "grid" : {
+        "inter_layers" : 4,
+        "optimal" : 50,
+        "diagonal" : 50,
+        "perpendicular" : 200,
+        "max" : 500,
+        "cell_ratio/xy" : 1.2,
+        "cell_ratio/z" : 1.5,
+        "margin/xy" : 2000,
+        "margin/z" : 3000,
+        "margin/from_trace" : true
+    },
+    "ports": [
+        {
+            "width": 200,
+            "length": 600,
+            "impedance": 50,
+            "layer": 0,
+            "plane": 1,
+            "excite": true
+        },
+        {
+            "width": 200,
+            "length": 600,
+            "impedance": 50,
+            "layer": 0,
+            "plane": 1,
+            "excite": false
+        }
+    ]
+}
