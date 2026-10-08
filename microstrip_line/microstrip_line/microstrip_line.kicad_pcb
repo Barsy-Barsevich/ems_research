@@ -34,6 +34,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
@@ -90,6 +129,29 @@
 		)
 	)
 	(gr_rect
+		(start 144.75 97.915)
+		(end 169.25 98.085)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net "1")
+		(uuid "cc8e6701-fc6f-4d1b-9ded-d9c45ad8ad70")
+	)
+	(gr_rect
+		(start 142 90)
+		(end 172 106)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "a7f1822a-b235-44aa-8a60-b46dfd1781ba")
+	)
+	(gr_rect
 		(start 142 90)
 		(end 172 106)
 		(stroke
@@ -100,42 +162,15 @@
 		(layer "Edge.Cuts")
 		(uuid "df3779d6-eb79-4f70-95b3-539f37c2de87")
 	)
-	(segment
-		(start 145 98)
-		(end 169 98)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "")
-		(uuid "b88341f6-4363-424c-a891-f10fb16e5042")
-	)
-	(zone
-		(layer "B.Cu")
-		(uuid "22e779fb-3c4f-434c-a9d4-f75054331477")
-		(hatch edge 0.5)
-		(connect_pads
-			(clearance 0.5)
+	(gr_line
+		(start 142.5 98)
+		(end 171.25 98)
+		(stroke
+			(width 0.1)
+			(type default)
 		)
-		(min_thickness 0.25)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 142 106) (xy 142 90) (xy 172 90) (xy 172 106)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(island yes)
-			(pts
-				(xy 171.442539 90.520185) (xy 171.488294 90.572989) (xy 171.4995 90.6245) (xy 171.4995 105.3755)
-				(xy 171.479815 105.442539) (xy 171.427011 105.488294) (xy 171.3755 105.4995) (xy 142.6245 105.4995)
-				(xy 142.557461 105.479815) (xy 142.511706 105.427011) (xy 142.5005 105.3755) (xy 142.5005 90.6245)
-				(xy 142.520185 90.557461) (xy 142.572989 90.511706) (xy 142.6245 90.5005) (xy 171.3755 90.5005)
-			)
-		)
+		(layer "F.Fab")
+		(uuid "e259caa6-c677-432e-8c70-6f68ed7cb35d")
 	)
 	(embedded_fonts no)
 )

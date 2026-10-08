@@ -1,9 +1,31 @@
 import pandas as pd
 import numpy as np
+import argparse
+
+def createParser():
+    parser = argparse.ArgumentParser(
+        prog = "ems2s2p",
+        description = "a program to convert gerber2ems output to .s2p format"
+    )
+    parser.add_argument(
+        dest = "input_filename",
+        default = 'Port_0_data.csv',
+        help = f"Input .csv file"
+    )
+    parser.add_argument(
+        "-o",
+        dest = "output_filename",
+        default = 'channel_mode.s2p',
+        help = f"Output .s2p file"
+    )
+    return parser
+   
+parser = createParser()
+namespace = parser.parse_args()
 
 # 1. Загружаем CSV (проверь, что разделитель - табуляция или запятая. 
 # Если файл разделен табуляцией, используй sep='\t', если запятой - sep=',')
-df = pd.read_csv('ems/results/Port_0_data.csv', sep=',') # Попробуй sep=',' если возникнет ошибка
+df = pd.read_csv(namespace.input_filename, sep=',') # Попробуй sep=',' если возникнет ошибка
 
 # 2. Извлекаем и конвертируем данные
 # Частота: из МГц в ГГц
@@ -34,8 +56,7 @@ touchstone_df = pd.DataFrame({
 })
 
 # 5. Сохраняем в формат Touchstone (.s2p)
-output_file = 'channel_model.s2p'
-with open(output_file, 'w') as f:
+with open(namespace.output_filename, 'w') as f:
     f.write("! Touchstone file converted from gerber2ems Port_0_data.csv\n")
     f.write("! Assumption: Channel is reciprocal and symmetric (S11=S22, S21=S12)\n")
     f.write("# GHz S MA R 50.0\n") # MA = Magnitude/Angle, R 50.0 = 50 Ом
@@ -48,5 +69,5 @@ with open(output_file, 'w') as f:
                 f"{row['s12_mag']:.6e} {row['s12_ang']:.6f} "
                 f"{row['s22_mag']:.6e} {row['s22_ang']:.6f}\n")
 
-print(f"✅ Файл успешно сохранен как {output_file}")
+print(f"✅ Файл успешно сохранен как {namespace.output_filename}")
 print("Не забудь проверить в PyBERT галочку 'Enforce Passivity' при загрузке!")
