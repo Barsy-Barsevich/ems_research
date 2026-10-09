@@ -128,6 +128,326 @@
 			(outputdirectory "../fab/")
 		)
 	)
+	(footprint "Barsotion-Simulation-Ports:Simulation_Port"
+		(layer "F.Cu")
+		(uuid "8f650313-b547-4b9c-8de3-b940f30386e9")
+		(at 146 98 -90)
+		(property "Reference" "SP1"
+			(at -12.35 -8.85 270)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2bf0e60-d680-4cfb-935a-727dbf58bf11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Simulation_Port"
+			(at -12.35 -7.35 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ddec6ca-a37d-47b4-87f4-2597c5077184")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bb1405c-5a7f-48e8-aa53-a6adc91107dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Simulation port, 600x200um"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "375ac8b0-e796-420b-9dac-c1ef99606c53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "Simulation_Port"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f0e7fa36-9963-4cee-a753-08ed67418e63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(attr smd board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.2 0.6)
+			(end 0.2 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "57095436-3d7f-4aac-9fbb-fbf92825245e")
+		)
+		(fp_line
+			(start 0.2 0.6)
+			(end 0.2 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "67595641-f3b9-4dc4-9715-81fd8c3e78eb")
+		)
+		(fp_line
+			(start -0.45 -0.25)
+			(end -0.2 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "bc870f7f-ed3f-44da-84fb-7ec5aa42f21d")
+		)
+		(fp_line
+			(start -0.45 -0.25)
+			(end 0 -0.7)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "135b6b4b-6340-4478-8b69-749fd3d2a846")
+		)
+		(fp_line
+			(start -0.2 -0.25)
+			(end -0.2 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "479043ab-596f-4dea-835a-72f263018198")
+		)
+		(fp_line
+			(start 0.2 -0.25)
+			(end 0.45 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "4a6c58e2-e11f-4b74-a50b-48bbcb6d4d83")
+		)
+		(fp_line
+			(start 0 -0.7)
+			(end 0.45 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "550e42b8-8b57-41a8-b1ec-a187f6157e59")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -2 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "51d804d9-ed78-4f45-ab0f-d1568025f7c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" smd rect
+			(at 0 0 270)
+			(size 0.2 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(uuid "41667973-fb03-49a9-af75-2bf473041218")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Barsotion-Simulation-Ports:Simulation_Port"
+		(layer "F.Cu")
+		(uuid "e7902e98-1545-4fe3-b30e-0e44e72a156f")
+		(at 168 98 90)
+		(property "Reference" "SP2"
+			(at -12.35 -8.85 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e681b229-9351-4c86-a184-5e6cd9447eb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Simulation_Port"
+			(at -12.35 -7.35 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b90b71bc-383a-45fd-86dc-399e7ec38991")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ffc51f9-6f5b-46bc-80de-9d78eb3fc7cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Simulation port, 600x200um"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ddc3cbe-a88c-4add-a356-86ef47fe5295")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "Simulation_Port"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b3b0c29d-060b-4c36-bc9f-ad1916fa13d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(attr smd board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 0 -0.7)
+			(end 0.45 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "b0c7d2db-dccc-4f64-be0e-70df3fddf630")
+		)
+		(fp_line
+			(start 0.2 -0.25)
+			(end 0.45 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "fed13d6b-73f5-430c-976c-d7c4a7480447")
+		)
+		(fp_line
+			(start -0.2 -0.25)
+			(end -0.2 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "b23f258e-57f3-446c-b9ab-84bd8d23ede0")
+		)
+		(fp_line
+			(start -0.45 -0.25)
+			(end 0 -0.7)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "538a8942-a544-4745-ab05-f8096c6ea86a")
+		)
+		(fp_line
+			(start -0.45 -0.25)
+			(end -0.2 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "2f697b07-6e7f-4c3d-8cac-bfabd265fbc4")
+		)
+		(fp_line
+			(start 0.2 0.6)
+			(end 0.2 -0.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "20d75ff4-385a-4203-a7ca-e3a6290043d2")
+		)
+		(fp_line
+			(start -0.2 0.6)
+			(end 0.2 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.Fab")
+			(uuid "3d355913-98fd-4e02-97a2-4d07a8dd2c28")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f1818832-8b51-46e8-996c-aeb961f3d4ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" smd rect
+			(at 0 0 90)
+			(size 0.2 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(uuid "72fd2eef-dfbb-4682-ac26-170bc0bb1426")
+		)
+		(embedded_fonts no)
+	)
 	(gr_rect
 		(start 144.75 97.915)
 		(end 169.25 98.085)

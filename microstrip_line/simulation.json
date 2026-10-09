@@ -20,7 +20,7 @@
     },
     "ports": [
         {
-            "width": 200,
+            "width": 100,
             "length": 600,
             "impedance": 50,
             "layer": 0,
@@ -28,7 +28,7 @@
             "excite": true
         },
         {
-            "width": 200,
+            "width": 100,
             "length": 600,
             "impedance": 50,
             "layer": 0,
